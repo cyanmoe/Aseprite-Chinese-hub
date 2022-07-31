@@ -1,0 +1,488 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 12pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffaaaa; }
+.sf3b16 {color: #000000; background-color: #aaffaa; }
+.sf3b18 {color: #000000; background-color: #a0e6a0; }
+.sf3b19 {color: #000000; background-color: #e6968c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffaaaa; }
+.sf6b16 {color: #ffffff; background-color: #aaffaa; }
+.sf6b18 {color: #ffffff; background-color: #a0e6a0; }
+.sf6b19 {color: #ffffff; background-color: #e6968c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffaaaa; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #aaffaa; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #a0e6a0; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #e6968c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffaaaa; }
+.sf8b16 {color: #800080; background-color: #aaffaa; }
+.sf8b18 {color: #800080; background-color: #a0e6a0; }
+.sf8b19 {color: #800080; background-color: #e6968c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffaaaa; }
+.sf9b16 {color: #008000; background-color: #aaffaa; }
+.sf9b18 {color: #008000; background-color: #a0e6a0; }
+.sf9b19 {color: #008000; background-color: #e6968c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffaaaa; }
+.sf10b16 {color: #ff0000; background-color: #aaffaa; }
+.sf10b18 {color: #ff0000; background-color: #a0e6a0; }
+.sf10b19 {color: #ff0000; background-color: #e6968c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffaaaa; }
+.sf11b16 {color: #606060; background-color: #aaffaa; }
+.sf11b18 {color: #606060; background-color: #a0e6a0; }
+.sf11b19 {color: #606060; background-color: #e6968c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffaaaa; }
+.sf12b16 {color: #800000; background-color: #aaffaa; }
+.sf12b18 {color: #800000; background-color: #a0e6a0; }
+.sf12b19 {color: #800000; background-color: #e6968c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffaaaa; }
+.sf13b16 {color: #0080c0; background-color: #aaffaa; }
+.sf13b18 {color: #0080c0; background-color: #a0e6a0; }
+.sf13b19 {color: #0080c0; background-color: #e6968c; }
+.sf15b2 {color: #ffffff; background-color: #ffffff; }
+.sf15b5 {color: #ffffff; background-color: #0078d7; }
+.sf15b14 {color: #ffffff; background-color: #ffaaaa; }
+.sf15b16 {color: #ffffff; background-color: #aaffaa; }
+.sf15b18 {color: #ffffff; background-color: #a0e6a0; }
+.sf15b19 {color: #ffffff; background-color: #e6968c; }
+.sf17b2 {color: #ffffff; background-color: #ffffff; }
+.sf17b5 {color: #ffffff; background-color: #0078d7; }
+.sf17b14 {color: #ffffff; background-color: #ffaaaa; }
+.sf17b16 {color: #ffffff; background-color: #aaffaa; }
+.sf17b18 {color: #ffffff; background-color: #a0e6a0; }
+.sf17b19 {color: #ffffff; background-color: #e6968c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffaaaa; }
+.sf20b16 {color: #000080; background-color: #aaffaa; }
+.sf20b18 {color: #000080; background-color: #a0e6a0; }
+.sf20b19 {color: #000080; background-color: #e6968c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffaaaa; }
+.sf21b16 {color: #0080c0; background-color: #aaffaa; }
+.sf21b18 {color: #0080c0; background-color: #a0e6a0; }
+.sf21b19 {color: #0080c0; background-color: #e6968c; }
+.sf3b2i {color: #ababab; background-color: #ffffff; }
+.sf3b5i {color: #005190; background-color: #0078d7; }
+.sf3b14i {color: #ab7272; background-color: #ffaaaa; }
+.sf3b16i {color: #72ab72; background-color: #aaffaa; }
+.sf3b18i {color: #6b9a6b; background-color: #a0e6a0; }
+.sf3b19i {color: #9a655e; background-color: #e6968c; }
+.sf6b2i {color: #ffffff; background-color: #ffffff; }
+.sf6b5i {color: #54a4e4; background-color: #0078d7; }
+.sf6b14i {color: #ffc6c6; background-color: #ffaaaa; }
+.sf6b16i {color: #c6ffc6; background-color: #aaffaa; }
+.sf6b18i {color: #bfeebf; background-color: #a0e6a0; }
+.sf6b19i {color: #eeb8b2; background-color: #e6968c; }
+.sf7b2i {color: #ababff; background-color: #ffffff; font-weight: bold; }
+.sf7b5i {color: #0051e4; background-color: #0078d7; font-weight: bold; }
+.sf7b14i {color: #ab72c6; background-color: #ffaaaa; font-weight: bold; }
+.sf7b16i {color: #72abc6; background-color: #aaffaa; font-weight: bold; }
+.sf7b18i {color: #6b9abf; background-color: #a0e6a0; font-weight: bold; }
+.sf7b19i {color: #9a65b2; background-color: #e6968c; font-weight: bold; }
+.sf8b2i {color: #d5abd5; background-color: #ffffff; }
+.sf8b5i {color: #2a51bb; background-color: #0078d7; }
+.sf8b14i {color: #d5729d; background-color: #ffaaaa; }
+.sf8b16i {color: #9dab9d; background-color: #aaffaa; }
+.sf8b18i {color: #969a96; background-color: #a0e6a0; }
+.sf8b19i {color: #c56589; background-color: #e6968c; }
+.sf9b2i {color: #abd5ab; background-color: #ffffff; }
+.sf9b5i {color: #007a90; background-color: #0078d7; }
+.sf9b14i {color: #ab9d72; background-color: #ffaaaa; }
+.sf9b16i {color: #72d572; background-color: #aaffaa; }
+.sf9b18i {color: #6bc56b; background-color: #a0e6a0; }
+.sf9b19i {color: #9a8f5e; background-color: #e6968c; }
+.sf10b2i {color: #ffabab; background-color: #ffffff; }
+.sf10b5i {color: #545190; background-color: #0078d7; }
+.sf10b14i {color: #ff7272; background-color: #ffaaaa; }
+.sf10b16i {color: #c6ab72; background-color: #aaffaa; }
+.sf10b18i {color: #bf9a6b; background-color: #a0e6a0; }
+.sf10b19i {color: #ee655e; background-color: #e6968c; }
+.sf11b2i {color: #cbcbcb; background-color: #ffffff; }
+.sf11b5i {color: #1f71b0; background-color: #0078d7; }
+.sf11b14i {color: #cb9292; background-color: #ffaaaa; }
+.sf11b16i {color: #92cb92; background-color: #aaffaa; }
+.sf11b18i {color: #8bba8b; background-color: #a0e6a0; }
+.sf11b19i {color: #ba857e; background-color: #e6968c; }
+.sf12b2i {color: #d5abab; background-color: #ffffff; }
+.sf12b5i {color: #2a5190; background-color: #0078d7; }
+.sf12b14i {color: #d57272; background-color: #ffaaaa; }
+.sf12b16i {color: #9dab72; background-color: #aaffaa; }
+.sf12b18i {color: #969a6b; background-color: #a0e6a0; }
+.sf12b19i {color: #c5655e; background-color: #e6968c; }
+.sf13b2i {color: #abd5eb; background-color: #ffffff; }
+.sf13b5i {color: #007ad0; background-color: #0078d7; }
+.sf13b14i {color: #ab9db1; background-color: #ffaaaa; }
+.sf13b16i {color: #72d5b1; background-color: #aaffaa; }
+.sf13b18i {color: #6bc5aa; background-color: #a0e6a0; }
+.sf13b19i {color: #9a8f9d; background-color: #e6968c; }
+.sf15b2i {color: #ffffff; background-color: #ffffff; }
+.sf15b5i {color: #54a4e4; background-color: #0078d7; }
+.sf15b14i {color: #ffc6c6; background-color: #ffaaaa; }
+.sf15b16i {color: #c6ffc6; background-color: #aaffaa; }
+.sf15b18i {color: #bfeebf; background-color: #a0e6a0; }
+.sf15b19i {color: #eeb8b2; background-color: #e6968c; }
+.sf17b2i {color: #ffffff; background-color: #ffffff; }
+.sf17b5i {color: #54a4e4; background-color: #0078d7; }
+.sf17b14i {color: #ffc6c6; background-color: #ffaaaa; }
+.sf17b16i {color: #c6ffc6; background-color: #aaffaa; }
+.sf17b18i {color: #bfeebf; background-color: #a0e6a0; }
+.sf17b19i {color: #eeb8b2; background-color: #e6968c; }
+.sf20b2i {color: #ababd5; background-color: #ffffff; }
+.sf20b5i {color: #0051bb; background-color: #0078d7; }
+.sf20b14i {color: #ab729d; background-color: #ffaaaa; }
+.sf20b16i {color: #72ab9d; background-color: #aaffaa; }
+.sf20b18i {color: #6b9a96; background-color: #a0e6a0; }
+.sf20b19i {color: #9a6589; background-color: #e6968c; }
+.sf21b2i {color: #abd5eb; background-color: #ffffff; }
+.sf21b5i {color: #007ad0; background-color: #0078d7; }
+.sf21b14i {color: #ab9db1; background-color: #ffaaaa; }
+.sf21b16i {color: #72d5b1; background-color: #aaffaa; }
+.sf21b18i {color: #6bc5aa; background-color: #a0e6a0; }
+.sf21b19i {color: #9a8f9d; background-color: #e6968c; }
+.ln {text-align: right; word-break: normal; color: #000000; background-color: #f0f0f0;}
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<thead>
+<tr>
+<th colspan="2" class="title" style="width:50.000000%">source\sChinese.ini</th>
+<th colspan="2" class="title" style="width:50.000000%">sChinese-update.ini</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln"><a name="d1" href="#d1">.</a></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; "># Copyright (C) 2018-202</span><span class="sf7b16">0</span><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">&nbsp; Igara Studio S.A.</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; "># Copyright (C) 2018-202</span><span class="sf7b16">2</span><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">&nbsp; Igara Studio S.A.</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d2" href="#d2">.</a></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; "># sChinese文本由 Just_Eleven 翻译、校对</span><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">。</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; "># sChinese文本由 Just_Eleven 翻译、校对</span><span class="sf7b18">，某人增加新翻译</span><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">。</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; "># 对应版本：v1.2.</span><span class="sf7b16">23</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; "># 对应版本：v1.2.</span><span class="sf7b16">37</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; "># 最后修改时间：202</span><span class="sf7b16">0</span><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">年</span><span class="sf7b16">8</span><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">月</span><span class="sf7b16">5</span><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">日 1</span><span class="sf7b16">5</span><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">:39:28</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; "># 最后修改时间：202</span><span class="sf7b16">2</span><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">年</span><span class="sf7b16">7</span><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">月</span><span class="sf7b16">27</span><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">日 1</span><span class="sf7b16">3</span><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">:39:28</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d3" href="#d3">.</a></td><td style="color: #000000; background-color: #e0e0ff; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">file_format_doesnt_support_palette </span><span style="color: #606060; background-color: #ddffdd; ">= </span><span style="color: #000000; background-color: #ddffdd; ">错误</span><span style="color: #606060; background-color: #ddffdd; ">&lt;&lt;</span><span style="color: #000000; background-color: #ddffdd; ">无法保存</span><span style="color: #606060; background-color: #ddffdd; ">{</span><span style="color: #ff0000; background-color: #ddffdd; ">0</span><span style="color: #606060; background-color: #ddffdd; ">}</span><span style="color: #000000; background-color: #ddffdd; ">格式的调色板</span><span style="color: #606060; background-color: #ddffdd; ">||</span><span style="color: #000000; background-color: #ddffdd; ">完成</span><span style="color: #606060; background-color: #ddffdd; ">(&amp;</span><span style="color: #000000; background-color: #ddffdd; ">O</span><span style="color: #606060; background-color: #ddffdd; ">)</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d4" href="#d4">.</a></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">file_format_</span><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">tags </span><span style="color: #606060; background-color: #ddffdd; ">= </span><span style="color: #000000; background-color: #ddffdd; ">标签</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">file_format_</span><span class="sf7b18">frame_</span><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">tags </span><span style="color: #606060; background-color: #ddffdd; ">= </span><span class="sf3b18">帧</span><span style="color: #000000; background-color: #ddffdd; ">标签</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d5" href="#d5">.</a></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">recent_file_doesnt_exist </span><span style="color: #606060; background-color: #ddffdd; ">= </span><span style="color: #000000; background-color: #ddffdd; ">Aseprite</span><span style="color: #606060; background-color: #ddffdd; ">&lt;&lt;</span><span style="color: #000000; background-color: #ddffdd; ">选</span><span class="sf3b16">则</span><span style="color: #000000; background-color: #ddffdd; ">的文件不存在</span><span style="color: #606060; background-color: #ddffdd; ">||</span><span style="color: #000000; background-color: #ddffdd; ">完成</span><span style="color: #606060; background-color: #ddffdd; ">(&amp;</span><span style="color: #000000; background-color: #ddffdd; ">O</span><span style="color: #606060; background-color: #ddffdd; ">)</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">recent_file_doesnt_exist </span><span style="color: #606060; background-color: #ddffdd; ">= </span><span style="color: #000000; background-color: #ddffdd; ">Aseprite</span><span style="color: #606060; background-color: #ddffdd; ">&lt;&lt;</span><span style="color: #000000; background-color: #ddffdd; ">选</span><span class="sf3b16">择</span><span style="color: #000000; background-color: #ddffdd; ">的文件不存在</span><span style="color: #606060; background-color: #ddffdd; ">||</span><span style="color: #000000; background-color: #ddffdd; ">完成</span><span style="color: #606060; background-color: #ddffdd; ">(&amp;</span><span style="color: #000000; background-color: #ddffdd; ">O</span><span style="color: #606060; background-color: #ddffdd; ">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">recent_folder_doesnt_exist </span><span style="color: #606060; background-color: #ddffdd; ">= </span><span style="color: #000000; background-color: #ddffdd; ">Aseprite</span><span style="color: #606060; background-color: #ddffdd; ">&lt;&lt;</span><span style="color: #000000; background-color: #ddffdd; ">选</span><span class="sf3b16">则</span><span style="color: #000000; background-color: #ddffdd; ">的文件夹不存在</span><span style="color: #606060; background-color: #ddffdd; ">||</span><span style="color: #000000; background-color: #ddffdd; ">完成</span><span style="color: #606060; background-color: #ddffdd; ">(&amp;</span><span style="color: #000000; background-color: #ddffdd; ">O</span><span style="color: #606060; background-color: #ddffdd; ">)</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">recent_folder_doesnt_exist </span><span style="color: #606060; background-color: #ddffdd; ">= </span><span style="color: #000000; background-color: #ddffdd; ">Aseprite</span><span style="color: #606060; background-color: #ddffdd; ">&lt;&lt;</span><span style="color: #000000; background-color: #ddffdd; ">选</span><span class="sf3b16">择</span><span style="color: #000000; background-color: #ddffdd; ">的文件夹不存在</span><span style="color: #606060; background-color: #ddffdd; ">||</span><span style="color: #000000; background-color: #ddffdd; ">完成</span><span style="color: #606060; background-color: #ddffdd; ">(&amp;</span><span style="color: #000000; background-color: #ddffdd; ">O</span><span style="color: #606060; background-color: #ddffdd; ">)</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d6" href="#d6">.</a></td><td style="color: #000000; background-color: #e0e0ff; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">Debugger </span><span style="color: #606060; background-color: #ddffdd; ">= </span><span style="color: #000000; background-color: #ddffdd; ">调试</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d7" href="#d7">.</a></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">FrameTagProperties </span><span style="color: #606060; background-color: #ddffdd; ">= </span><span style="color: #000000; background-color: #ddffdd; ">标签属性</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">FrameTagProperties </span><span style="color: #606060; background-color: #ddffdd; ">= </span><span class="sf3b18">帧</span><span style="color: #000000; background-color: #ddffdd; ">标签属性</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e0e0ff; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span class="sf7b18">FullscreenMode </span><span class="sf11b18">= </span><span class="sf3b18">切换全屏模式</span>&nbsp;</code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d8" href="#d8">.</a></td><td style="color: #000000; background-color: #e0e0ff; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">NewFile_Sprite </span><span style="color: #606060; background-color: #ddffdd; ">= </span><span style="color: #000000; background-color: #ddffdd; ">Sprite</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e0e0ff; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">NewFile_BackgroundLayer </span><span style="color: #606060; background-color: #ddffdd; ">= </span><span style="color: #000000; background-color: #ddffdd; ">背景</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d9" href="#d9">.</a></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">Screenshot_sRGB </span><span style="color: #606060; background-color: #ddffdd; ">= (</span><span style="color: #000000; background-color: #ddffdd; ">sRGB</span><span style="color: #000000; background-color: #ddffdd; ">颜色配置文件</span><span style="color: #606060; background-color: #ddffdd; ">)</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">Screenshot_sRGB </span><span style="color: #606060; background-color: #ddffdd; ">= (</span><span style="color: #000000; background-color: #ddffdd; ">sRGB</span><span class="sf11b18">&nbsp;</span><span style="color: #000000; background-color: #ddffdd; ">颜色配置文件</span><span style="color: #606060; background-color: #ddffdd; ">)</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d10" href="#d10">.</a></td><td style="color: #000000; background-color: #e0e0ff; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">ShowMenu </span><span style="color: #606060; background-color: #ddffdd; ">= </span><span style="color: #000000; background-color: #ddffdd; ">显示菜单</span><span style="color: #606060; background-color: #ddffdd; ">: {</span><span style="color: #ff0000; background-color: #ddffdd; ">0</span><span style="color: #606060; background-color: #ddffdd; ">}</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d11" href="#d11">.</a></td><td style="color: #000000; background-color: #e0e0ff; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #800080; background-color: #ddffdd; ">[debugger]</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e0e0ff; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">title </span><span style="color: #606060; background-color: #ddffdd; ">= </span><span style="color: #000000; background-color: #ddffdd; ">调试器</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e0e0ff; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">continue </span><span style="color: #606060; background-color: #ddffdd; ">= </span><span style="color: #000000; background-color: #ddffdd; ">开始或继续调试</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e0e0ff; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">step_into </span><span style="color: #606060; background-color: #ddffdd; ">= </span><span style="color: #000000; background-color: #ddffdd; ">单步运行（进入子函数）</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e0e0ff; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">step_over </span><span style="color: #606060; background-color: #ddffdd; ">= </span><span style="color: #000000; background-color: #ddffdd; ">单步运行（越过子函数）</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e0e0ff; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">step_out </span><span style="color: #606060; background-color: #ddffdd; ">= </span><span style="color: #000000; background-color: #ddffdd; ">单步运行（跳出子函数）</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e0e0ff; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">toggle_breakpoint </span><span style="color: #606060; background-color: #ddffdd; ">= </span><span style="color: #000000; background-color: #ddffdd; ">切换断点</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e0e0ff; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">stacktrace </span><span style="color: #606060; background-color: #ddffdd; ">= </span><span style="color: #000000; background-color: #ddffdd; ">堆栈跟踪</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e0e0ff; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">console </span><span style="color: #606060; background-color: #ddffdd; ">= </span><span style="color: #000000; background-color: #ddffdd; ">控制台</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e0e0ff; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">locals </span><span style="color: #606060; background-color: #ddffdd; ">= </span><span style="color: #000000; background-color: #ddffdd; ">本地</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e0e0ff; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code>&nbsp;</code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d12" href="#d12">.</a></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">meta </span><span style="color: #606060; background-color: #ddffdd; ">= </span><span style="color: #000000; background-color: #ddffdd; ">元</span><span style="color: #606060; background-color: #ddffdd; ">:</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">meta </span><span style="color: #606060; background-color: #ddffdd; ">= </span><span style="color: #000000; background-color: #ddffdd; ">元</span><span class="sf3b18">数据</span><span style="color: #606060; background-color: #ddffdd; ">:</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d13" href="#d13">.</a></td><td style="color: #000000; background-color: #e0e0ff; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">refresh_button_tooltip </span><span style="color: #606060; background-color: #ddffdd; ">= </span><span style="color: #000000; background-color: #ddffdd; ">刷新文件夹视图</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d14" href="#d14">.</a></td><td style="color: #000000; background-color: #e0e0ff; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">share_crashdb </span><span style="color: #606060; background-color: #ddffdd; ">= </span><span style="color: #000000; background-color: #ddffdd; ">与</span><span style="color: #606060; background-color: #ddffdd; ">&nbsp;</span><span style="color: #000000; background-color: #ddffdd; ">Aseprite</span><span style="color: #606060; background-color: #ddffdd; ">&nbsp;</span><span style="color: #000000; background-color: #ddffdd; ">开发者分享崩溃数据</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e0e0ff; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">share_crashdb_tooltip </span><span style="color: #606060; background-color: #ddffdd; ">= &lt;&lt;&lt;</span><span style="color: #000000; background-color: #ddffdd; ">END</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e0e0ff; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">勾选自动与 Aseprite 开发者分享崩溃数据。</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e0e0ff; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">这将有助于发现新的错误，并为所有用户提高</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e0e0ff; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">Aseprite 的整体稳定性。</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e0e0ff; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">END</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d15" href="#d15">.</a></td><td style="color: #000000; background-color: #e0e0ff; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">invert_brush_size_wheel </span><span style="color: #606060; background-color: #ddffdd; ">= </span><span style="color: #000000; background-color: #ddffdd; ">反转鼠标滚轮方向以增加画笔大小</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d16" href="#d16">.</a></td><td style="color: #000000; background-color: #e0e0ff; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">file_debugger </span><span style="color: #606060; background-color: #ddffdd; ">= </span><span style="color: #000000; background-color: #ddffdd; ">调试器</span><span style="color: #606060; background-color: #ddffdd; ">(&amp;</span><span style="color: #000000; background-color: #ddffdd; ">D</span><span style="color: #606060; background-color: #ddffdd; ">)</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d17" href="#d17">.</a></td><td style="color: #000000; background-color: #e0e0ff; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">view_advanced_mode </span><span style="color: #606060; background-color: #ddffdd; ">= </span><span style="color: #000000; background-color: #ddffdd; ">高级模式</span><span style="color: #606060; background-color: #ddffdd; ">(&amp;</span><span style="color: #000000; background-color: #ddffdd; ">A</span><span style="color: #606060; background-color: #ddffdd; ">)</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d18" href="#d18">.</a></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">help_readme </span><span style="color: #606060; background-color: #ddffdd; ">= </span><span style="color: #000000; background-color: #ddffdd; ">自述</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">help_readme </span><span style="color: #606060; background-color: #ddffdd; ">= </span><span style="color: #000000; background-color: #ddffdd; ">自述</span><span class="sf3b18">文件</span>&nbsp;</code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d19" href="#d19">.</a></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">help_twitter </span><span style="color: #606060; background-color: #ddffdd; ">= </span><span class="sf3b16">Twitter</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">help_twitter </span><span style="color: #606060; background-color: #ddffdd; ">= </span><span class="sf3b16">推特</span>&nbsp;</code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d20" href="#d20">.</a></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">如果你想</span><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">保</span><span class="sf7b16">留</span><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">选区边</span><span class="sf7b16">界设置</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span class="sf7b18">勾选后，每次我们修改选区时，"窗口&gt;显示&gt;选择边缘 "选项</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span class="sf7b16">请取消</span><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">选</span><span class="sf7b16">中此</span><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">选项</span><span class="sf7b16">.</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span class="sf7b18">将被启用.</span><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">如果你想</span><span class="sf7b18">在 "窗口&gt;显示&gt;选择边缘 "选项被禁用时</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e0e0ff; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">保</span><span class="sf7b16">持</span><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">选区边</span><span class="sf7b16">缘的隐藏，例如，避免视觉干扰或性能问题，就</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e0e0ff; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span class="sf7b16">不要勾</span><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">选</span><span class="sf7b16">这个</span><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">选项</span><span class="sf7b16">。</span>&nbsp;</code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d21" href="#d21">.</a></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">force_rotsprite </span><span style="color: #606060; background-color: #ddffdd; ">= </span><span style="color: #000000; background-color: #ddffdd; ">强制精灵</span><span style="color: #000000; background-color: #ddffdd; ">转</span><span style="color: #606060; background-color: #ddffdd; ">(</span><span style="color: #000000; background-color: #ddffdd; ">RotSprite</span><span style="color: #606060; background-color: #ddffdd; ">)</span><span style="color: #000000; background-color: #ddffdd; ">即使是直角</span><span style="color: #606060; background-color: #ddffdd; ">/</span><span style="color: #000000; background-color: #ddffdd; ">平角</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">force_rotsprite </span><span style="color: #606060; background-color: #ddffdd; ">= </span><span style="color: #000000; background-color: #ddffdd; ">强制精灵</span><span class="sf3b18">旋</span><span style="color: #000000; background-color: #ddffdd; ">转</span><span style="color: #606060; background-color: #ddffdd; ">(</span><span style="color: #000000; background-color: #ddffdd; ">RotSprite</span><span style="color: #606060; background-color: #ddffdd; ">)</span><span style="color: #000000; background-color: #ddffdd; ">即使是直角</span><span style="color: #606060; background-color: #ddffdd; ">/</span><span style="color: #000000; background-color: #ddffdd; ">平角</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d22" href="#d22">.</a></td><td style="color: #000000; background-color: #e0e0ff; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">keep_timeline_selection </span><span style="color: #606060; background-color: #ddffdd; ">= </span><span style="color: #000000; background-color: #ddffdd; ">保持选择</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e0e0ff; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">keep_timeline_selection_tooltip </span><span style="color: #606060; background-color: #ddffdd; ">= &lt;&lt;&lt;</span><span style="color: #000000; background-color: #ddffdd; ">END</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e0e0ff; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">当我编辑画布的时候，保持</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e0e0ff; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">图层/帧/单元格的选定范围.</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e0e0ff; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">END</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d23" href="#d23">.</a></td><td style="color: #000000; background-color: #e0e0ff; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">open_sequence_alert </span><span style="color: #606060; background-color: #ddffdd; ">= </span><span style="color: #000000; background-color: #ddffdd; ">以动画形式打开一列静态文件</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e0e0ff; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">open_sequence_alert_ask </span><span style="color: #606060; background-color: #ddffdd; ">= </span><span style="color: #000000; background-color: #ddffdd; ">询问</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e0e0ff; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">open_sequence_alert_no </span><span style="color: #606060; background-color: #ddffdd; ">= </span><span style="color: #000000; background-color: #ddffdd; ">否</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e0e0ff; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">open_sequence_alert_yes </span><span style="color: #606060; background-color: #ddffdd; ">= </span><span style="color: #000000; background-color: #ddffdd; ">是</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d24" href="#d24">.</a></td><td style="color: #000000; background-color: #e0e0ff; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">keys_extensions </span><span style="color: #606060; background-color: #ddffdd; ">= </span><span style="color: #000000; background-color: #ddffdd; ">键盘快捷键</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d25" href="#d25">.</a></td><td style="color: #000000; background-color: #e0e0ff; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">shaders_for_color_selectors </span><span style="color: #606060; background-color: #ddffdd; ">= </span><span style="color: #000000; background-color: #ddffdd; ">使用着色器进行颜色选择</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e0e0ff; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">hue_with_sat_value </span><span style="color: #606060; background-color: #ddffdd; ">= </span><span style="color: #000000; background-color: #ddffdd; ">将</span><span style="color: #606060; background-color: #ddffdd; ">&nbsp;</span><span style="color: #000000; background-color: #ddffdd; ">饱和度</span><span style="color: #606060; background-color: #ddffdd; ">/</span><span style="color: #000000; background-color: #ddffdd; ">值</span><span style="color: #606060; background-color: #ddffdd; ">&nbsp;</span><span style="color: #000000; background-color: #ddffdd; ">应用于</span><span style="color: #606060; background-color: #ddffdd; ">&nbsp;</span><span style="color: #000000; background-color: #ddffdd; ">色彩</span><span style="color: #606060; background-color: #ddffdd; ">/</span><span style="color: #000000; background-color: #ddffdd; ">色度</span><span style="color: #606060; background-color: #ddffdd; ">/</span><span style="color: #000000; background-color: #ddffdd; ">色调</span><span style="color: #606060; background-color: #ddffdd; ">&nbsp;</span><span style="color: #000000; background-color: #ddffdd; ">选择器上的色调滑块</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d26" href="#d26">.</a></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">加载 wintab32.dll 驱动以便使用</span><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">Wacom</span><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">类设备.</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">加载 wintab32.dll 驱动以便使用</span><span class="sf7b18">&nbsp;</span><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">Wacom</span><span class="sf7b18">&nbsp;</span><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">类设备.</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d27" href="#d27">.</a></td><td style="color: #000000; background-color: #e0e0ff; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">save_palette_as_preset </span><span style="color: #606060; background-color: #ddffdd; ">= </span><span style="color: #000000; background-color: #ddffdd; ">保存调色板为预设</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d28" href="#d28">.</a></td><td style="color: #000000; background-color: #e0e0ff; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">websocket_label </span><span style="color: #606060; background-color: #ddffdd; ">= </span><span style="color: #000000; background-color: #ddffdd; ">要为此URL打开一个</span><span style="color: #606060; background-color: #ddffdd; ">&nbsp;</span><span style="color: #000000; background-color: #ddffdd; ">WebSocket</span><span style="color: #606060; background-color: #ddffdd; ">&nbsp;</span><span style="color: #000000; background-color: #ddffdd; ">链接</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d29" href="#d29">.</a></td><td style="color: #000000; background-color: #e0e0ff; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">allow_open_conn_access </span><span style="color: #606060; background-color: #ddffdd; ">= </span><span style="color: #000000; background-color: #ddffdd; ">允许打开连接</span><span style="color: #606060; background-color: #ddffdd; ">(&amp;</span><span style="color: #000000; background-color: #ddffdd; ">A</span><span style="color: #606060; background-color: #ddffdd; ">)</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d30" href="#d30">.</a></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">title </span><span style="color: #606060; background-color: #ddffdd; ">= </span><span style="color: #000000; background-color: #ddffdd; ">Sprite</span><span style="color: #000000; background-color: #ddffdd; ">大小</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">title </span><span style="color: #606060; background-color: #ddffdd; ">= </span><span style="color: #000000; background-color: #ddffdd; ">Sprite</span><span class="sf11b18">&nbsp;</span><span style="color: #000000; background-color: #ddffdd; ">大小</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d31" href="#d31">.</a></td><td style="color: #000000; background-color: #e0e0ff; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e0e0ff; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #800080; background-color: #ddffdd; ">[css_options]</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e0e0ff; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">title </span><span style="color: #606060; background-color: #ddffdd; ">= </span><span style="color: #000000; background-color: #ddffdd; ">CSS</span><span style="color: #606060; background-color: #ddffdd; ">&nbsp;</span><span style="color: #000000; background-color: #ddffdd; ">选项</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e0e0ff; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">pixel_scale </span><span style="color: #606060; background-color: #ddffdd; ">= </span><span style="color: #000000; background-color: #ddffdd; ">像素比例</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e0e0ff; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">with_vars </span><span style="color: #606060; background-color: #ddffdd; ">= </span><span style="color: #000000; background-color: #ddffdd; ">使用</span><span style="color: #606060; background-color: #ddffdd; ">&nbsp;</span><span style="color: #000000; background-color: #ddffdd; ">CSS3</span><span style="color: #606060; background-color: #ddffdd; ">&nbsp;</span><span style="color: #000000; background-color: #ddffdd; ">变量</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e0e0ff; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ddffdd; "><code><span style="color: #0000ff; background-color: #ddffdd; font-weight: bold; ">generate_html </span><span style="color: #606060; background-color: #ddffdd; ">= </span><span style="color: #000000; background-color: #ddffdd; ">生成样本</span><span style="color: #606060; background-color: #ddffdd; ">&nbsp;</span><span style="color: #000000; background-color: #ddffdd; ">HTML</span><span style="color: #606060; background-color: #ddffdd; ">&nbsp;</span><span style="color: #000000; background-color: #ddffdd; ">文件</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td></td>
+<td class="ln"></td><td></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
