@@ -131,7 +131,7 @@ function ThemeManager:Load(onload, onreset)
                 local confirmation = app.alert {
                     title = "正加载主题",
                     text = "未保存的更改将丢失，您要继续吗？",
-                    buttons = {"是", "N否"}
+                    buttons = {"是", "否"}
                 }
 
                 if confirmation == 1 then
