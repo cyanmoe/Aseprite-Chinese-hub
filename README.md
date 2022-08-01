@@ -1,7 +1,7 @@
 # Aseprite 中文汉化/脚本扩展 合集
 
 该集合包含 Aseprite 中文汉化，同时简单汉化一些自己用的着的扩展/脚本。
-> 下载地址在右侧Release(即发行版)处
+> 扩展下载地址在右侧Release(即发行版)处，脚本下载可以直接点进文件夹文件然后点`Download`
 
 ## Aseprite 中文汉化翻译
 
@@ -16,9 +16,15 @@
 
 ## Aseprite 脚本
 
+### Isometric Box
+|汉化|B站|原版|
+|--|--|--|
+|简单|[视频](https://www.bilibili.com/video/BV1XA4y1o7wK)|[链接](https://darkwark.itch.io/isobox-for-aseprite)|
+快速绘制等距盒体生成器的脚本汉化
+
 以下脚本来自作者[Kacper Woźniak](thkaspar.itch.io)，后续跟进更多汉化
 
-## Theme Preferences
+### Theme Preferences
 
 |汉化|后续汉化？|原版|
 |--|--|--|
