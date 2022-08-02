@@ -17,9 +17,10 @@
 ## Aseprite 脚本
 
 ### Isometric Box
-|汉化|B站|原版|
+|支持最低|B站|原版|
 |--|--|--|
-|简单|[视频](https://www.bilibili.com/video/BV1XA4y1o7wK)|[链接](https://darkwark.itch.io/isobox-for-aseprite)|
+|1.2.10Beta2|[视频](https://www.bilibili.com/video/BV1XA4y1o7wK)|[链接](https://darkwark.itch.io/isobox-for-aseprite)|
+
 快速绘制等距盒体生成器的脚本汉化
 
 以下脚本来自作者[Kacper Woźniak](thkaspar.itch.io)，后续跟进更多汉化
@@ -33,4 +34,10 @@
 Aseprite 扩展，能自己定制主题。
 机翻说明见[这里](./Theme%20Preferences/README.md)
 
+### Sprite Analyzer
 
+|汉化|原版|
+|--|--|
+|完成|同上链接|
+
+扩展，可以创建一个实时预览，并对精灵进行分解，允许你跟踪精灵的值、轮廓、轮廓和封锁的形状。[机翻说明](./Sprite%20Analyzer/README.md)
